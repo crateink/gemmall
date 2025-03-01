@@ -26,7 +26,7 @@ class CreateTable extends Migration
             'deleted_at' => ['type' => 'datetime', 'null' => true],
         ]);
         $this->forge->addPrimaryKey('id');
-        $this->forge->createTable('games');
+        $this->forge->createTable('brands');
     }
 
     public function down()
