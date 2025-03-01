@@ -28,35 +28,63 @@ body {
 
 .navbar-custom-1 {
     background-color: #182530;
+    .container {
+        position: relative;
+    }
 }
 
-@media (min-width: 992px) {
-    .navbar-custom-1 .nav-item .nav-link {
-        display: block;
-        height: 3.5rem;
-        line-height: 3.5rem;
-        padding: 0 2rem;
-        position: relative;
-        color: #fff;
-        font-weight: 600;
-    }
-
-    .navbar-custom-1 .nav-item:nth-child(1) .nav-link {
-        background-color: #1e93ff;
-        color: #000;
-    }
-
-    .navbar-custom-1 .nav-item:not(:nth-child(1)) .nav-link::after {
-        content: "";
-        display: block;
-        width: 1px;
-        height: 30%;
-        background-color: #666;
+.categorie {
+    .sub-area {
+        background-color: #11151a;
         position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
+        top: 100%;
+        width: 100%;
+        z-index: 999;
+        padding: 1rem;
+        display: none;
+        .item {
+            background-color: #182530;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            &:hover {
+                background-color: #1e93ff;
+                color: #000;
+            }
+        }
     }
+    &:hover .sub-area {
+        display: block;
+    }
+}
+
+.navbar-custom-1 .nav-item .nav-link {
+    display: block;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0 2rem;
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* 第一个加背景 */
+.navbar-custom-1 .nav-item:first-child .nav-link {
+    background-color: #1e93ff;
+    color: #000;
+    text-transform: uppercase;
+}
+
+/* 分割线 */
+.navbar-custom-1 .nav-item:not(:first-child):not(:last-child) .nav-link::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 30%;
+    background-color: #666;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
 
 /* 按钮样式 */
@@ -72,4 +100,123 @@ body {
 .btn.btn-custom-2 {
     background-color: #1a1f26;
     color: #fff;
+}
+
+.btn.btn-custom-3 {
+    background-color: transparent;
+    color: #fff;
+    border-color: #1a1f26;
+}
+
+/* 区域公共样式 */
+.areas {
+    margin-bottom: 3rem;
+    > .title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+}
+
+/* 首页样式 */
+/* 轮播 */
+.home-carousel img {
+    aspect-ratio: 6 / 1;
+    min-height: 200px;
+}
+
+.home-carousel .carousel-control-prev,
+.home-carousel .carousel-control-next {
+    filter: invert(1);
+}
+
+/* 热门游戏 */
+.hot-game {
+    .item {
+        aspect-ratio: 1 / 1;
+        background-color: #2a364e;
+        border-radius: 1rem;
+        overflow: hidden;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .title {
+            text-align: center;
+            font-style: italic;
+            font-size: 1.5rem;
+            font-weight: 600;
+            position: absolute;
+            bottom: 1rem;
+            width: 100%;
+        }
+    }
+}
+
+/* 新闻 */
+.noticia {
+    margin-bottom: 3rem;
+    .item {
+        background-color: #2a364e;
+        border-radius: 1rem;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 1rem;
+        img {
+            width: 100%;
+            aspect-ratio: 2 / 1;
+            object-fit: cover;
+        }
+        .title {
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.2rem;
+            padding: 0 1rem;
+            margin: 0.5rem 0;
+        }
+        .tags {
+            padding: 0 1rem;
+            display: flex;
+            gap: 0.6rem;
+            margin-bottom: 0.5rem;
+            .tag {
+                background-color: #13151a;
+                border-radius: 0.3rem;
+                padding: 0.1rem 0.3rem;
+                font-size: 0.8rem;
+            }
+        }
+        .desc {
+            padding: 0 1rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            /* 4行省略号 */
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+        }
+    }
+}
+
+/* 底部 */
+.footer {
+    background-color: #11151a;
+    color: #768493;
+    padding: 2rem 0;
+    .imgs {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+
+        img {
+            height: 40px;
+            border-radius: 0.3rem;
+            overflow: hidden;
+        }
+    }
 }

@@ -54,5 +54,11 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = service('session');
+
+        // 设置语言
+        // 从 URL 参数中获取语言
+        $locale = $this->request->getGet('lang') ?? 'en';
+        // 设置语言
+        \Config\Services::language()->setLocale($locale);
     }
 }

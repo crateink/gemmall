@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'home' => '首页',
+    'login' => '登录',
+    'register' => '注册',
+    'username' => '用户名',
+    'email' => '邮箱',
+    'password' => '密码',
+    'password_confirm' => '密码确认',
+    'remember_me' => '记住我',
+    'forgot_password' => '忘记密码？',
+    'use_magic_link' => '使用链接登陆',
+    'need_account' => '没有账号？',
+    'have_account' => '已有账号？',
+    'back_to_login' => '返回登陆',
+    'send' => '发送',
+    'cart' => '购物车',
+    'english' => '英文',
+    'chinese' => '中文',
+    'categories' => '分类',
+    'affiliate' => '推荐返利',
+    'contact_us' => '联系我们',
+    'juegos_de_tendencia' => '热门游戏',
+    'noticias' => '新闻',
+];

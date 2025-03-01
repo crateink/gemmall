@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'home' => 'Home',
+    'login' => 'Login',
+    'register' => 'Register',
+    'username' => 'Username',
+    'email' => 'Email',
+    'password' => 'Password',
+    'password_confirm' => 'password Confirm',
+    'remember_me' => 'Remember me',
+    'forgot_password' => 'Forgot password?',
+    'use_magic_link' => 'Use a login link',
+    'need_account' => 'Need an account?',
+    'have_account' => 'Already have an account?',
+    'back_to_login' => 'Back to login',
+    'send' => 'Send',
+    'cart' => 'Cart',
+    'english' => 'English',
+    'chinese' => 'Chinese',
+    'categories' => 'Categories',
+    'affiliate' => 'Affiliate',
+    'contact_us' => 'Contact us',
+    'juegos_de_tendencia' => 'Juegos de tendencia',
+    'noticias' => 'Noticias',
+];
