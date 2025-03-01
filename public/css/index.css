@@ -1,0 +1,75 @@
+html,
+body {
+    height: 100%;
+    background-color: #162029;
+}
+
+/* header 样式 */
+.navbar-custom {
+    background-color: #11151a;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .btn-outline-light {
+    color: #fff;
+}
+
+.navbar-custom .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1;
+}
+
+.navbar-custom-1 {
+    background-color: #182530;
+}
+
+@media (min-width: 992px) {
+    .navbar-custom-1 .nav-item .nav-link {
+        display: block;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        padding: 0 2rem;
+        position: relative;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .navbar-custom-1 .nav-item:nth-child(1) .nav-link {
+        background-color: #1e93ff;
+        color: #000;
+    }
+
+    .navbar-custom-1 .nav-item:not(:nth-child(1)) .nav-link::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 30%;
+        background-color: #666;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+/* 按钮样式 */
+.btn {
+    padding: 0.375rem 0.75rem;
+}
+
+.btn.btn-custom-1 {
+    background-color: #1e93ff;
+    color: #000;
+}
+
+.btn.btn-custom-2 {
+    background-color: #1a1f26;
+    color: #fff;
+}
