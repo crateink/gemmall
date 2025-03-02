@@ -11,5 +11,4 @@
                 <img src="https://www.mmoexp.com/mmoexp-v230830/images/privacy-safe.gif" alt="">
             </div>
         </div>
-
 </footer>

@@ -8,7 +8,7 @@ if (!function_exists('url_with_lang')) {
      * @param string $lang 语言代码
      * @return string
      */
-    function url_with_lang($uri, $lang = null)
+    function url_with_lang($uri = '', $lang = null)
     {
         $lang = $lang ?? \Config\Services::language()->getLocale(); // 获取当前语言
         return site_url($uri) . '?lang=' . $lang;

@@ -15,7 +15,6 @@ class CreateTable extends Migration
 {
     public function up(): void
     {
-        // 定义表结构
         $this->forge->addField([
             'id'         => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
             'name'       => ['type' => 'varchar', 'constraint' => 30, 'null' => true],
@@ -31,7 +30,6 @@ class CreateTable extends Migration
 
     public function down()
     {
-        // 回滚操作：删除表
-        $this->forge->dropTable('games');
+        $this->forge->dropTable('brands', true, true);
     }
 }
